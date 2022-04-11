@@ -1,25 +1,45 @@
 // Textbox parameters
-textbox_width = 355;//319
-textbox_height = 96;//127
-border = 18;
-line_sep = 20;
+textbox_width = 208; //160
+textbox_height = 64; //48
+border = 8;
+line_sep = 11;
 line_width = textbox_width - border*2;
 textbox_spr = sTextBox;
 textbox_img = 0;
-textbox_img_spd = 1/60;
-
+arrow_spr = sArrow;
+arrow_img = 0;
+textbox_img_spd = 6/FRAME_RATE;
+arrow_img_spd = 15/FRAME_RATE;
 
 
 // Text parameters
 
 page = 0;
 page_number = 0;
-text[0] = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus";
-text[1] = "libero sit amet consequat pellentesque, ipsum massa mollis nulla";
-text[2] = "ac placerat nunc mi nec odio. Duis pharetra velit eget molestie cursus";
-text[3] = "Praesent eu dictum felis, id fringilla mi. Pellentesque dapibus orci eu sodales aliquet.";
-text[4] = "Donec sit amet dapibus augue.";
+text[0] = "";
 text_length = string_length(text[0]);
+char[0, 0] = "";
+char_x[0, 0] = 0;
+char_y[0, 0] = 0;
 draw_char = 0;
 text_spd = 1;
+
+
+// options
+option[0] = "";
+option_link_id[0] = -1;
+option_pos = 0;
+option_number = 0;
+
 setup = false;
+
+// sounds
+snd_delay = 4;
+snd_count = snd_delay;
+
+
+// effects
+setTextDefaults();
+last_free_space = 0;
+text_pause_time = 16;
+text_pause_timer = 0;

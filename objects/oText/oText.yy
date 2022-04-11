@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Dialogue System",
-    "path": "folders/Dialogue System.yy",
+    "name": "Objects",
+    "path": "folders/Dialogue System/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "oText",
